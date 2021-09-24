@@ -3,6 +3,7 @@ import { Navbar, Footer, Notification } from "./layout"
 import { BrowserRouter as Router, Route } from "react-router-dom"
 import { Basket, Category, Checkout, Home, Login, Product } from "./pages"
 import Order from "./components/Orders"
+import ProtectedRoute from "../routing/ProtectedRoute"
 
 function App(): React.ReactElement {
   return (
@@ -17,9 +18,15 @@ function App(): React.ReactElement {
         <Route path="/product/:id" component={Product} />
         <Route path="/category/:category" component={Category} />
         <Route exact path="/login" component={Login} />
-        <Route exact path="/basket" component={Basket} />
-        <Route exact path="/checkout" component={Checkout} />
-        <Route exact path="/orders" component={Order} />
+        <ProtectedRoute path="/basket">
+          <Basket />
+        </ProtectedRoute>
+        <ProtectedRoute path="/basket">
+          <Checkout />
+        </ProtectedRoute>
+        <ProtectedRoute path="/orders">
+          <Order />
+        </ProtectedRoute>
         <Footer />
       </div>
     </Router>
