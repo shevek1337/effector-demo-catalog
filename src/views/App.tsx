@@ -21,7 +21,7 @@ function App(): React.ReactElement {
         <ProtectedRoute path="/basket">
           <Basket />
         </ProtectedRoute>
-        <ProtectedRoute path="/basket">
+        <ProtectedRoute path="/checkout">
           <Checkout />
         </ProtectedRoute>
         <ProtectedRoute path="/orders">
