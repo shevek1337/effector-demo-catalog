@@ -5,7 +5,7 @@ import {
 } from "."
 import { Product } from "./types"
 
-const url = "http://192.168.1.6:5003/Catalog"
+const url = "http://192.168.1.2:8003/Catalog"
 
 export const getCatalog = async (): Promise<Product[]> => {
   const response = await fetch(url, {

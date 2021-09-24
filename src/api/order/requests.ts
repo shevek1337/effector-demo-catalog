@@ -1,6 +1,6 @@
 import { getOrderParams, UserOrders } from "."
 
-const url = "http://192.168.1.6:5003/Order"
+const url = "http://192.168.1.2:8003/Order"
 
 export const getOrders = async (
   params: getOrderParams
