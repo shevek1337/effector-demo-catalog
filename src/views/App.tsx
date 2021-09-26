@@ -1,8 +1,15 @@
 import React from "react"
 import { Navbar, Footer, Notification } from "./layout"
 import { BrowserRouter as Router, Route } from "react-router-dom"
-import { Basket, Category, Checkout, Home, Login, Product } from "./pages"
-import Order from "./components/Orders"
+import {
+  Basket,
+  Category,
+  Checkout,
+  Home,
+  Login,
+  Product,
+  Order,
+} from "./pages"
 import ProtectedRoute from "../routing/ProtectedRoute"
 
 function App(): React.ReactElement {

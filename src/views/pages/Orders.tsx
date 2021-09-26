@@ -1,6 +1,6 @@
 import { useStore } from "effector-react"
 import React, { useEffect } from "react"
-import { Loader } from "."
+import { Loader } from "../components"
 import { authStore } from "../../state/FakeAuth"
 import { getOrders, orderStore } from "../../state/Orders"
 
